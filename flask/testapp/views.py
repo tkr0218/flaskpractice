@@ -12,7 +12,7 @@ for i in range(2,n):
 @app.route('/')
 def index():
     my_dict = {
-        'insert_something1': 'views.pyのinsert_something1部分です。',
+        'insert_something1': 'views.pyのinsert_something2部分です。',
         'insert_something2': 'views.pyのinsert_something4部分です。',
         'test_titles': t
     }

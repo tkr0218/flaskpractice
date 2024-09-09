@@ -1,0 +1,18 @@
+text{
+    /*transform-origin:0 50%;*/
+    text-align: center;
+    margin:0 auto;
+    animation:100s linear infinite rotation1;
+}
+
+text1{
+  color: rgb(192, 53, 53);
+}
+
+text2{
+  color: blue;
+}
+@keyframes rotation1{
+    0%{ transform:rotate(0);}
+    100%{ transform:rotate(360deg); }
+}

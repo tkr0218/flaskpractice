@@ -2,18 +2,6 @@
 
 {% block content %}
 <div class="container">
-<style>
-.text{
-    /*transform-origin:0 50%;*/
-    text-align: center;
-    margin:0 auto;
-    animation:100s linear infinite rotation1;
-}
-@keyframes rotation1{
-    0%{ transform:rotate(0);}
-    100%{ transform:rotate(360deg); }
-}
-</style>
 <div class="text"><img src="{{ url_for('static', filename='img/b.png') }}"></div>
 </div>
 {% endblock %}

@@ -20,5 +20,8 @@ def index():
 @app.route('/test')
 def other1():
     return render_template('testapp/index2.html')
+@app.route('/sampleform')
+def sample_form():
+    return render_template('testapp/sampleform.html')
 #if __name__ == '__main__':
     #app.run(debug=True, host='0.0.0.0', port=5000)

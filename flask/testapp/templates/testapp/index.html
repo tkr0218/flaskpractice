@@ -3,17 +3,18 @@
 {% block content %}
 <div class="container">
 <h1>index.html表示してます</h1>
-<p>{{ my_dict.insert_something1 }}</p>
+<p id="test">{{ my_dict.insert_something1 }}</p>
 <p>{{ my_dict.insert_something2 }}</p>
 <h2>1~1000000までの素数一覧</h2>
 <ul>
   {% for title in my_dict.test_titles %}
     {% if (title-1)%3==0%}
-    <div class="text1"><li>{{ title }}</li></div>
+    <text1><li>{{ title }}</li></text1>
     {%else%}
-    <div class="text2"><li>{{ title }}</li></div>
+    <text2><li>{{ title }}</li></text2>
     {%endif%}
   {% endfor %}
 </ul>
 </div>
+<script src="{{ url_for('static', filename='javascript/sample.js') }}"></script>
 {% endblock %}

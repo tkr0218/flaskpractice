@@ -23,5 +23,9 @@ def other1():
 @app.route('/sampleform')
 def sample_form():
     return render_template('testapp/sampleform.html')
+@app.route('/sampleform-post', methods=['POST'])
+def sample_form_temp():
+    print('POSTデータ受け取ったので処理します')
+    return 'POST受け取ったよ'
 #if __name__ == '__main__':
     #app.run(debug=True, host='0.0.0.0', port=5000)
